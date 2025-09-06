@@ -3,32 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Photo Gallery</title>
+  <title>Lori</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>📸 BABAAAAAA</h1>
-    <p>Click an image to view it larger</p>
+
+  <!-- Profile Header -->
+  <header class="profile-header">
+    <div class="avatar">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+      <div class="profile-top">
+        <h2 class="username">Baba</h2>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <ul class="stats">
+        <li><strong>3</strong> posts</li>
+        <li><strong>1</strong> followers</li>
+        <li><strong>1</strong> following</li>
+      </ul>
+      <p class="bio">🌸 Minimalist | 📸 Photography | 🎨 Aesthetic vibes</p>
+    </div>
   </header>
 
+  <!-- Gallery Grid -->
   <main class="gallery">
-    <img src="1.jpg" alt="Photo 1">
-    <img src="2.jpg" alt="Photo 2">
-    <img src="3.jpg" alt="Photo 3">
-    <img src="1.jpg" alt="Photo 4">
-    <img src="2.jpg" alt="Photo 5">
-    <img src="2.jpg" alt="Photo 6">
-  </main>
+  <img src="profile.jpg" alt="Photo 1">
+  <img src="profile.jpg" alt="Photo 2">
 
-  <!-- Lightbox (hidden by default) -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
+  <!-- 🎥 Video Post -->
+  <video class="video-post" muted loop>
+    <source src="1.MOV" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <img src="profile.jpg" alt="Photo 3">
+  <img src="profile.jpg" alt="Photo 4">
+</main>
+
+
+  <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <video class="lightbox-video" id="lightbox-video" controls></video>
+</div>
+
 
   <footer>
-    <p>© 2025 My Gallery | Built with ❤️</p>
+    <p>Instagram Clone © 2025</p>
   </footer>
 
   <script src="script.js"></script>
